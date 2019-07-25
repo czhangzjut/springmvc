@@ -8,9 +8,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title>成功界面</title>
+    <title>$Title$</title>
   </head>
   <body>
-    <a href="hello.form">MVC</a>
+      <a href="hello.form">MVC</a>
   </body>
 </html>

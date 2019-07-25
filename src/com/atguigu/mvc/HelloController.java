@@ -1,6 +1,7 @@
 package com.atguigu.mvc;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
@@ -12,7 +13,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HelloController {
 
     @RequestMapping("/hello.form")
-    public String hello(){
+    public String hello(Model model){
+        model.addAttribute("name"," it's the first time to see you.");
+        model.addAttribute("url","http://www.atguigu.com/download.shtml#JavaSE");
         System.out.println("MVC");
         return "hello";
     }
